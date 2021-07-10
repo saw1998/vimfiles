@@ -1,0 +1,55 @@
+
+/*
+{
+  "configurations": {
+    "Launch": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceRoot}/a.exe",
+        "args": [
+            "-i ${workspaceRoot}/src/dbgTest/input.ini"
+        ],
+        "cwd": "${workspaceRoot}/",
+        "console": "externalTerminal",
+        "debugOptions": [
+            "WaitOnAbnormalExit",
+            "WaitOnNormalExit",
+            "RedirectOutput"
+        ],
+        "stopAtEntry": true,
+        "MIMode": "gdb"
+      }
+    }
+  }
+
+}
+*/
+
+
+{
+	"configurations":{
+		"Launch":{
+			"adapter":"vscode-cpptools",
+			"configuration":{
+				"request":"launch",
+				"program":"${workspaceRoot}/a",
+				"cwd":"${workspaceRoot}",
+				"externalConsole":true,
+				"MIMode":"gdb",
+				"stopAtEntry":true
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
